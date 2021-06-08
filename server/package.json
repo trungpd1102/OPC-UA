@@ -1,0 +1,22 @@
+{
+  "name": "opc-ua_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trungpd1102/OPC-UA.git"
+  },
+  "author": "Pham Duc Trung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trungpd1102/OPC-UA/issues"
+  },
+  "homepage": "https://github.com/trungpd1102/OPC-UA#readme",
+  "dependencies": {
+    "node-opcua": "^2.44.0"
+  }
+}
