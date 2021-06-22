@@ -25,7 +25,7 @@ const options = {
 };
 const client = OPCUAClient.create(options);
 // const endpointUrl = "opc.tcp://opcuademo.sterfive.com:26543";
-const endpointUrl = "opc.tcp://DESKTOP-GKIJQM3:4334";
+const endpointUrl = "opc.tcp://trungpd:4334/UA/MyLittleServer";
 
 async function main() {
    try {

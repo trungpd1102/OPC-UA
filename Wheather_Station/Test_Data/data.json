@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": -0.13,
+        "lat": 51.51
+    },
+    "sys": {
+        "message": 0.0223,
+        "country": "GB",
+        "sunrise": 1398055845,
+        "sunset": 1398107249
+    },
+    "weather": [
+        {
+            "id": 501,
+            "main": "Rain",
+            "description": "moderate rain",
+            "icon": "10d"
+        }
+    ],
+    "base": "cmc stations",
+    "main": {
+        "temp": 290.04,
+        "humidity": 70,
+        "pressure": 1003,
+        "temp_min": 287.04,
+        "temp_max": 293.15
+    },
+    "wind": {
+        "speed": 0.51,
+        "gust": 3.6,
+        "deg": 93
+    },
+    "rain": {
+        "1h": 1.02
+    },
+    "clouds": {
+        "all": 56
+    },
+    "dt": 1398100214,
+    "id": 2643743,
+    "name": "London",
+    "cod": 200
+}

@@ -50,7 +50,7 @@ var options = {
 };
 var client = OPCUAClient.create(options);
 // const endpointUrl = "opc.tcp://opcuademo.sterfive.com:26543";
-var endpointUrl = "opc.tcp://DESKTOP-GKIJQM3:4334";
+var endpointUrl = "opc.tcp://trungpd:4334";
 function main() {
     return __awaiter(this, void 0, void 0, function () {
         function timeout(ms) {

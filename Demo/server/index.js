@@ -49,13 +49,9 @@ function post_initialize() {
       namespace.addVariable({
 
          componentOf: device,
-
          nodeId: "ns=1;b=1020FFAA", // some opaque NodeId in namespace 4
-
          browseName: "MyVariable2",
-
          dataType: "Double",
-
          value: {
             get: function () {
                return new opcua.Variant({ dataType: opcua.DataType.Double, value: variable2 });
