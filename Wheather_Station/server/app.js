@@ -3,7 +3,7 @@ Error.stackTraceLimit = Infinity;
 
 /*global require,setInterval,console */
 const cities = [
-    'London', 'Paris', 'New York', 'Moscow'];
+    'London'];
 
 
 const fs = require("fs");
@@ -94,10 +94,12 @@ function construct_my_address_space(server) {
     const objectsFolder = addressSpace.rootFolder.objects;
 
     const citiesNode = namespace.addFolder(objectsFolder, { browseName: "Cities" });
-
+console.log(citiesNode);
     for (let city_name of cities) {
         // declare the city node
+        
         const cityNode = namespace.addFolder(citiesNode, { browseName: city_name });
+        console.log({ citynode: cityNode });
         namespace.addVariable({
             componentOf: cityNode,
             browseName: "Temperature",
@@ -144,9 +146,10 @@ function extract_value(dataType, city_name, property) {
 
         const server = new opcua.OPCUAServer({
             port: 4334, // the port of the listening socket of the servery
+            resourcePath: "/UA/WeatherStation",
             buildInfo: {
-                productName: "WeatherStation",
-                buildNumber: "7658",
+                productName: "MyWeatherStation",
+                buildNumber: "4334",
                 buildDate: new Date(2019, 6, 14),
             }
         });
@@ -155,7 +158,7 @@ function extract_value(dataType, city_name, property) {
         await server.initialize();
 
         var i = construct_my_address_space(server);
-console.log(i);
+
         await server.start();
 
         console.log("Server is now listening ... ( press CTRL+C to stop)");
